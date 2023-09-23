@@ -6,9 +6,10 @@
 -->
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Ihor Neporozhnii</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="images/website_icon.ico">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -19,20 +20,23 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
 						<h1>Ihor Neporozhnii</h1>
 						<p>PhD Student and Research Assistant <br />
-						at the <a href="https://twitter.com/ajlkn">UofT</a> and <a href="https://html5up.net">Clean energy Lab</a>.</p>
+						at the <a href="https://www.utoronto.ca/">University of Toronto</a> and <a href="http://cleanenergy.utoronto.ca/">Clean Energy Lab</a>.</p>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">About me</a></li>
-							<li><a href="#second">My Journey</a></li>
-							<li><a href="#first">Research Projects</a></li>
-							<li><a href="#last">Public Outreach</a></li>
-							<li><a href="#cta">Side Projects</a></li>
+					<!--		<li><a href="#second">My Journey</a></li> -->
+							<li><a href="#first">Research</a></li>
+							<li><a href="#publications">Publications</a></li>
+							<li><a href="#last">Conference Presentations</a></li>
+							<li><a href="#awards">Awards</a></li>
+							<li><a href="#sideprojects">Side Projects</a></li>
+							
 							
 						</ul>
 					</nav>
@@ -47,26 +51,28 @@
 										<header class="major">
 											<h2>About me</h2>
 										</header>
-										<p>As Research Assistant at the University of Toronto, I am working on accelerating the discovery 
-										   of novel materials for Clean Energy applications using Machine Learning.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
+										<p style="text-align:justify">Ihor is a third-year Ph.D. student and Research Assistant at the <a href="https://www.utoronto.ca/">University of Toronto</a>. His research is focused on accelerating the discovery of novel materials for clean energy applications using machine learning and quantum chemistry. Before joining the <a href="http://cleanenergy.utoronto.ca/">Clean Energy Lab at UofT</a>, Ihor earned his Bachelor of Science degree in Physics and Astronomy from Taras Shevchenko National University of Kyiv. During his Bachelor studies, Ihor worked on projects in computational nuclear and high-energy physics.  </p>
+										   
+									    <ul class="actions">
+											<li><a href="images/Ihor_Neporozhnii_CV.pdf" target=”_blank” class="button">Download CV</a></li>
 										</ul>
 									</div>
-									<span class="image"><img src="images/headshot_sq.jpg" alt="" /></span>
+									<span class="headshot"><img src="images/headshot_sq.jpg" alt="" /></span>
 								</div>
 							</section>
 
 					
 
 						<!-- Second Section -->
-							<section id="second" class="main special">
+						<!--	<section id="second" class="main special">
 								<header class="major">
-									<h2>My Journey</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<ul class="statistics">
+									<h2>My Journey</h2> -->
+								<!--	<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
+									posuere. Nulla massa urna, fermentum eget quam aliquet.</p> -->
+						<!--		</header>
+								<img src="images/headshot_sq.jpg" alt="" width="100%" height="auto"> -->
+
+								<!-- <ul class="statistics">
 									<li class="style1">
 										<span class="icon solid fa-code-branch"></span>
 										<strong>5,120</strong> Etiam
@@ -87,108 +93,216 @@
 										<span class="icon fa-gem"></span>
 										<strong>1,024</strong> Nullam
 									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
+								</ul> -->
+							<!--	<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="generic.html" class="button">Download CV</a></li>
 									</ul>
 								</footer>
-							</section>
+							</section> -->
+							
 
 	<!-- First Section -->
 	<section id="first" class="main special">
 		<header class="major">
-			<h2>My Projects</h2>
+			<h2>My Research</h2>
 		</header>
 		<ul class="features">
 			<li>
-				<span class="icon solid major style1 fa-code"></span>
-				<h3>Machine learning for Projected Density of States predictions</h3>
-				<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+				<div class="spotlight">
+					<span class="image"><img src="images/gnn_pdos_prediction.png" alt=""/></span>
+				</div>
+				<h3>Graph Neural Network for Materials Density of States prediction</h3>
+				<ul class="actions special">
+					<a href="https://github.com/ineporozhnii/pdos_gnn" target=”_blank” class="button">Learn More</a>
+				</ul>
 			</li>
 			<li>
-				<span class="icon major style3 fa-copy"></span>
-				<h3>Amed sed feugiat</h3>
-				<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+				<div class="spotlight">
+					<span class="image"><img src="images/material_space_loop.gif" alt=""/></span>
+				</div>
+				<h3>Navigate Materials Space with ML-generated Electronic Fingerprints</h3>
+				<ul class="actions special">
+					<a href="https://huggingface.co/spaces/inep/prodosmate" target=”_blank” class="button">Learn More</a>
+				</ul>
 			</li>
 			<li>
-				<span class="icon major style5 fa-gem"></span>
-				<h3>Dolor nullam</h3>
-				<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+				<div class="spotlight">
+					<span class="image"><img src="images/mol_gen.png" alt=""/></span>
+				</div>
+				<h3>Molecule Generator with GFN1-xTB optimization</h3>
+				<ul class="actions special">
+					<a href="https://github.com/ineporozhnii/mol_gen_xyz" target=”_blank” class="button">Learn More</a>
+				</ul>
 			</li>
 		</ul>
-		<footer class="major">
-			<ul class="actions special">
-				<li><a href="generic.html" class="button">Learn More</a></li>
-			</ul>
-		</footer>
+
 	</section>
 
-							<section id="last" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Public Outreach</h2>
-										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/presenting.jpeg" alt="" /></span>
-								</div>
-							</section>	
+	<section id="publications" class="main">
+		<div class="spotlight">
+			<div class="content">
+				<header class="major">
+					<h2>Publications</h2>
+				</header>
+				<ul style="list-style-type:disc">
+					<li>
+						<b>Navigating Materials Space with ML-Generated Electronic Fingerprints</b> <a href="https://chemrxiv.org/engage/chemrxiv/article-details/6501118ab338ec988a61699d" target=”_blank”>&nbspPreprint</a>  <br>
+						<small><b>I. Neporozhnii</b>, Z. Wang, R. Bajpai, C. Gomez, N. Chakraborty, I. Tamblyn, O. Voznyy</small>
+					</li>
+					<li>
+						<b>Strain data augmentation enables machine learning of inorganic crystal geometry optimization</b> <a href="https://doi.org/10.1016/j.patter.2022.100663" target=”_blank”>&nbspPatterns</a>  <br>
+						<small>F. Dinic, Z. Wang, <b>I. Neporozhnii</b>, U. Bin Salim, R. Bajpai, N. Rajiv, V. Chavda, V. Radhakrishnan, and O. Voznyy</small>
+					</li>
+					<li>
+						<b>Insertion of MXene-Based Materials into Cu–Pd 3D Aerogels for Electroreduction of CO2 to Formate</b> <a href="https://doi.org/10.1002/aenm.202300402" target=”_blank”>&nbspAdvanced Energy Materials</a>  <br>
+						<small>M. Abdinejad, S. Subramanian, M. K. Motlagh, M. Noroozifar, S. Duangdangchote,  <b>I. Neporozhnii</b>, D. Ripepi, D. Pinto, M. Li, K. Tang, J. Middelkoop, A, Urakawa, O. Voznyy, H.-B. Kraatz, T. Burdyny</small>
+					</li>
+					<li>
+						<b>Mesoscopic self-ordering in oxygen doped Ce films adsorbed on Mo(112)</b> <a href="https://doi.org/10.1016/j.susc.2020.121766" target=”_blank”>&nbspSurface Science</a>  <br>
+						<small>T. Afanasieva, A. Fedorus, A. Goriachko, A. Naumovets, <b>I. Neporozhnii</b>, and D. Rumiantsev</small>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>	
 
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+	<section id="last" class="main">
+		<div class="spotlight">
+			<div class="content">
+				<header class="major">
+					<h2>Conference Presentations</h2>
+				</header>
+
+				<ul style="list-style-type:disc">
+					<li>
+						<b>Accelerate Conference 2023</b> <small>(Toronto, Canada)</small> <br>
+					<!--	<small>Acceleration Consortium, University of Toronto</small> -->
+					</li>
+					<li>
+						<b>Climate Positive Energy Research Day 2023</b> <small>(Toronto, Canada)</small> <br>
+					<!--	<small>University of Toronto</small> -->
+					</li>
+					<li>
+						<b>CSC 2023</b> <small>(Vancouver, Canada)</small> <br>
+					<!--	<small>The Chemical Institute of Canada</small> -->
+					</li>
+					<li>
+						<b>MRS Fall Meeting 2022</b> <small>(Boston, United States)</small> <br>
+					<!--	<small>Material Research Society</small> -->
+					</li>
+					<li>
+						<b>Accelerate Conference 2022</b> <small>(Toronto, Canada)</small> <br>
+					<!--	<small>Acceleration Consortium, University of Toronto</small> -->
+					</li>
+					<li>
+						<b>CSTCC 2022</b> <small>(Kelowna, Canada)</small> <br>
+					<!--	<small>Canadian Association of Theoretical Chemists</small> -->
+					</li>
+					<li>
+						<b>CCCE 2022</b> <small>(Calgary, Canada)</small> <br>
+					<!--	<small>The Chemical Institute of Canada</small> -->
+					</li>
+					<li>
+						<b>WDS 2020</b> <small>(Prague, Czech Republic)</small> <br>
+					<!--	<small>Charles University</small> -->
+					</li>
+			    </ul>
+				
+			</div>
+			<span class="image"><img src="images/presenting.jpeg" alt="" /></span>
+		</div>
+	</section>	
+
+	<section id="awards" class="main special">
+		<header class="major">
+			<h2>Awards & Scholarships</h2>
+		</header>
+		<ul class="features2">
+			<li>
+				<div class="projectcol">
+					<span class="image"><img src="images/cpe_logo.png" alt="" width="15%" height="auto"/></span>
+				</div>
+				<h3>Climate Positive Energy Graduate Scholarship</h3>
+				<ul class="actions special">
+					<a href="https://cpe.utoronto.ca/climate-positive-energy-graduate-student-scholarships/" target=”_blank” class="button">Learn More</a>
+				</ul>
+			</li>
+			<li>
+				<div class="projectcol">
+					<span class="image"><img src="images/uoft_logo.png" alt="" width="15%" height="auto"/></span>
+				</div>
+				<h3>Connaught Scholarship for Doctoral Students</h3>
+				<ul class="actions special">
+					<a href="https://www.sgs.utoronto.ca/awards/connaught-international-scholarship/" target=”_blank” class="button">Learn More</a>
+				</ul>
+			</li>
+		</ul>
+
+	</section>
+
+	<!-- Get Started -->
+	<section id="sideprojects" class="main special">
+		<header class="major">
+			<h2>Side Projects</h2>
+		</header>
+		<ul class="features2">
+			<li>
+				<div class="projectcol">
+					<span class="image"><img src="images/ainfer_demo.png" alt=""/></span>
+				</div>
+				<h3>Ainfer</h3>
+				<p> A web application for research paper analysis with Large Language models.</p>
+				<ul class="actions special">
+					<a href="https://github.com/ineporozhnii/Ainfer" target=”_blank” class="button">Learn More</a>
+				</ul>
+			</li>
+			<li>
+				<div class="projectcol">
+					<span class="image"><img src="images/satellites.gif" alt=""/></span>
+				</div>
+				<h3>Satalite tracker</h3>
+				<p>Code for live tracking of stelites and space debris. Developed for NASA Space Apps hackathon</p>
+				<ul class="actions special">
+					<a href="https://www.youtube.com/watch?v=t6fcdRts1C8&ab_channel=OleksandraOstapenko" target=”_blank” class="button">Learn More</a>
+				</ul>
+			</li>
+		</ul>
+	
+	</section>
 
 
-					</div>
+</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Contact Me</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>80 St George St &bull; Toronto, ON M5S 3H6 &bull; Canada</dd>
-								<dt>Phone</dt>
-								<dd>(+1) 778-697-8423</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="https://twitter.com/ineporozhnii" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
-								<li><a href="https://www.linkedin.com/in/ihor-neporozhnii/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/ineporozhnii" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="https://scholar.google.com/citations?user=zQt6fF8AAAAJ&hl=en" class="icon brands fa-google alt"><span class="label">Google Scholar</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+<!-- Footer -->
+<footer id="footer">
+	<!-- <section>
+		<h2>Aliquam sed mauris</h2>
+		<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+		<ul class="actions">
+			<li><a href="generic.html" class="button">Learn More</a></li>
+		</ul>
+	</section> -->
+	<section>
+		<h2>Contact Me</h2>
+		<dl class="alt">
+			<dt>Address</dt>
+			<dd>1265 Military Trail &bull; Toronto, ON M1C 1A4 &bull; Canada</dd>
+			<dt>Phone</dt>
+			<dd>(+1) 778-697-8423</dd>
+			<dt>Email</dt>
+			<dd>ihor.neporozhnii@mail.utoronto.ca</dd>
+		</dl>
+		<ul class="icons">
+			<li><a href="https://twitter.com/ineporozhnii" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+			<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
+			<li><a href="https://www.linkedin.com/in/ihor-neporozhnii/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+			<li><a href="https://github.com/ineporozhnii" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+			<li><a href="https://scholar.google.com/citations?user=zQt6fF8AAAAJ&hl=en" class="icon brands fa-google alt"><span class="label">Google Scholar</span></a></li>
+		</ul>
+	</section>
+	<p class="copyright">&copy; 2023 Ihor Neporozhnii. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+</footer>
 
 
 				
