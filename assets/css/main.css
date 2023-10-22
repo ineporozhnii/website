@@ -3076,7 +3076,7 @@ input, select, textarea {
 			padding: 0.65em;
 			border-radius: 100%;
 			border: solid 1px;
-			margin-top: -8em;
+			margin-top: 0em;
 		}
 
 			.spotlight .image img {
