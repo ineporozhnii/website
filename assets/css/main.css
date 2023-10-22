@@ -3084,6 +3084,21 @@ input, select, textarea {
 				border-radius: 100%;
 				width: 16em;
 			}
+		
+		.spotlight .talkimg {
+			display: inline-block;
+			margin-left: 0em;
+			padding: 0.65em;
+			border-radius: 100%;
+			border: solid 1px;
+			margin-top: -8em;
+		}
+
+			.spotlight .talkimg img {
+				display: block;
+				border-radius: 100%;
+				width: 16em;
+			}
 
 		.spotlight .headshot {
 			display: inline-block;
@@ -3140,6 +3155,18 @@ input, select, textarea {
 					margin-top: 0em;
 				}
 
+				.spotlight .talkimg {
+					-moz-flex: 0 1 auto;
+					-webkit-flex: 0 1 auto;
+					-ms-flex: 0 1 auto;
+					flex: 0 1 auto;
+					margin-left: 0;
+					margin-bottom: 2em;
+					margin-top: 0em;
+				}
+
+
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3153,10 +3180,36 @@ input, select, textarea {
 					width: 12em;
 				}
 
+			.spotlight .headshot {
+				padding: 0.35em;
+				margin-top: 0em;
+			}
+
+				.spotlight .headshot img {
+					width: 12em;
+				}
+
+			.spotlight .talkimg {
+				padding: 0.35em;
+				margin-top: 0em;
+			}
+
+				.spotlight .talkimg img {
+					width: 12em;
+				}
+
 		}
 
 	.spotlight .image {
 		border-color: rgba(255, 255, 255, 0.35);
+	}
+
+	.spotlight .talkimg {
+		border-color: rgba(0, 0, 0, 0.25);
+	}
+
+	.spotlight .headshot {
+		border-color: rgba(0, 0, 0, 0.25);
 	}
 
 
