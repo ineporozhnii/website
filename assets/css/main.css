@@ -2928,6 +2928,71 @@ input, select, textarea {
 	}
 
 
+.research_md {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	width: calc(100% + 2em);
+	margin: 0 0 3em -2em;
+	padding: 0;
+	list-style: none;
+}
+
+	.research_md li {
+		width: calc(45% - 2em);
+		margin-left: 1em;
+		margin-right: 1em;
+		margin-top: 2em;
+		padding: 0;
+	}
+
+		.research_md li:nth-child(1), .research_md li:nth-child(2) {
+			margin-top: 0;
+		}
+
+		.research_md li > :last-child {
+			margin-bottom: 0;
+		}
+
+	@media screen and (max-width: 980px) {
+
+		.research_md li {
+			width: calc(50% - 2em);
+			margin-bottom: 2em;
+		}
+
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.research_md {
+			width: 100%;
+			margin: 0 0 2em 0;
+		}
+
+			.research_md li {
+				width: 100%;
+				margin-left: 0;
+				margin-right: 0em;
+				margin-top: 2em;
+			}
+
+				.research_md li:nth-child(2) {
+					margin-top: 2em;
+				}
+
+	}
+
 /* Statistics */
 
 	.statistics {
