@@ -2942,7 +2942,7 @@ input, select, textarea {
 	-ms-justify-content: center;
 	justify-content: center;
 	width: calc(100% + 2em);
-	margin: 0 0 3em -2em;
+	margin: 0 0 0em -2em;
 	padding: 0;
 	list-style: none;
 }
@@ -2967,7 +2967,6 @@ input, select, textarea {
 
 		.research_md li {
 			width: calc(50% - 2em);
-			margin-bottom: 2em;
 		}
 
 
