@@ -1,0 +1,6 @@
+.DS_Store
+.vscode/
+additional/
+TODO.md
+*.backup-*
+images/lgps_loop_.webp

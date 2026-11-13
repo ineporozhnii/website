@@ -1,319 +1,589 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ihor Neporozhnii</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="icon" href="images/website_icon.ico">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Ihor Neporozhnii — ML for Molecules, Materials &amp; Drug Discovery</title>
+	<meta name="description" content="Ihor Neporozhnii is a machine learning researcher and computational chemist developing deep learning and physics-based methods for molecular, materials, and drug discovery." />
+	<link rel="canonical" href="https://ineporozhnii.github.io/website/" />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<meta property="og:type" content="profile" />
+	<meta property="og:title" content="Ihor Neporozhnii — ML for Molecules, Materials &amp; Drug Discovery" />
+	<meta property="og:description" content="Machine learning researcher working on active learning, ML interatomic potentials, equivariant GNNs, and chemical foundation models." />
+	<meta property="og:url" content="https://ineporozhnii.github.io/website/" />
+	<meta property="og:image" content="https://ineporozhnii.github.io/website/images/headshot.jpg" />
+	<meta name="twitter:card" content="summary" />
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1>Ihor Neporozhnii</h1>
-						<p>PhD Candidate and Research Assistant <br />
-						at the <a href="http://cleanenergy.utoronto.ca/">University of Toronto Clean Energy Lab</a>. Research Scientist Intern at <a href="https://www.valencelabs.com/">Valence Labs</a>.</p>
-					</header>
+	<link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+	<link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">About me</a></li>
-							<li><a href="#first">Research</a></li>
-							<li><a href="#publications">Publications</a></li>
-							<li><a href="#last">Conference Presentations</a></li>
-							<li><a href="#awards">Awards</a></li>
-							<li><a href="#sideprojects">Side Projects</a></li>
-						</ul>
-					</nav>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
 
-				<!-- Main -->
-					<div id="main">
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Ihor Neporozhnii",
+		"url": "https://ineporozhnii.github.io/website/",
+		"image": "https://ineporozhnii.github.io/website/images/headshot.jpg",
+		"email": "mailto:ihor.neporozhnii@gmail.com",
+		"jobTitle": "Machine Learning Researcher",
+		"affiliation": { "@type": "CollegeOrUniversity", "name": "University of Toronto" },
+		"alumniOf": { "@type": "CollegeOrUniversity", "name": "Taras Shevchenko National University of Kyiv" },
+		"knowsAbout": ["Machine learning", "Computational chemistry", "Active learning", "Machine learning interatomic potentials", "Graph neural networks", "Drug discovery", "Materials discovery"],
+		"sameAs": [
+			"https://scholar.google.com/citations?user=zQt6fF8AAAAJ",
+			"https://github.com/ineporozhnii",
+			"https://www.linkedin.com/in/ihor-neporozhnii/",
+			"https://huggingface.co/inep"
+		]
+	}
+	</script>
+	<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>About me</h2>
-										</header>
-										<p >I am a PhD student and Research Assistant at the <a href="http://cleanenergy.utoronto.ca/">University of Toronto Clean Energy Lab</a>. My research focuses on integrating machine learning and computational chemistry methods to accelerate the discovery of novel molecules and materials. Before joining the Clean Energy Lab at UofT, I earned a Bachelor of Science degree in Physics from Taras Shevchenko National University of Kyiv. My undergraduate research involved experimental work with nanomaterials as well as computational high-energy physics.  </p>
-									</div>
-									<span class="headshot"><img src="images/headshot_sq.jpg" alt="" /></span>
+	<nav class="nav" aria-label="Sections">
+		<div class="container">
+			<a class="nav-name" href="#about">Ihor Neporozhnii</a>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#research">Research</a></li>
+				<li><a href="#publications">Publications</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#talks">Talks</a></li>
+				<li><a href="#awards">Awards</a></li>
+				<li><a href="#other">Other</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+
+		<!-- About -->
+		<section id="about" class="hero">
+			<div class="container hero-grid">
+				<div>
+					<h1>Ihor Neporozhnii</h1>
+					<p class="tagline">Machine learning researcher · AI for molecules &amp; materials</p>
+					<p class="affiliation">PhD Candidate, University of Toronto · ML Research Intern, Valence Labs (Recursion)</p>
+					<div class="bio">
+						<p>I develop machine learning methods that make molecular and materials discovery faster and cheaper, combining deep learning with physics-based simulations. I am currently focused on active learning, machine learning interatomic potentials, geometric deep learning, and chemical foundation models.</p>
+						<!-- <p>I build pipelines end to end, from structure generation and quantum-chemical simulation to distributed model training and million-scale virtual screening, in close collaboration with experimental chemists. I am currently focused on protein–ligand modeling for small-molecule drug discovery.</p> -->
+					</div>
+					<ul class="links">
+						<li><a href="mailto:ihor.neporozhnii&#64;gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i>Email</a></li>
+						<li><a href="https://scholar.google.com/citations?user=zQt6fF8AAAAJ&amp;hl=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Google Scholar</a></li>
+						<li><a href="https://github.com/ineporozhnii" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a></li>
+						<li><a href="https://www.linkedin.com/in/ihor-neporozhnii/" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>					</ul>
+				</div>
+				<div class="photo">
+					<img class="headshot" src="images/headshot.jpg" width="200" height="200" alt="Portrait of Ihor Neporozhnii" />
+				</div>
+			</div>
+		</section>
+
+		<!-- Research -->
+		<section id="research">
+			<div class="container">
+				<h2>Research</h2>
+				<!-- <p class="intro">I combine machine learning with computational chemistry (molecular dynamics, semiempirical tight-binding, density functional theory, and free-energy methods) to search chemical space efficiently and to decide which experiments and simulations are worth running.</p> -->
+
+				<div class="cards">
+
+					<article class="card">
+						<div class="card-media">
+							<video src="images/lgps.mp4" poster="images/lgps.jpg" width="640" height="420" autoplay muted loop playsinline preload="metadata" aria-label="Animation of a lithium-ion conductor crystal structure."></video>
+						</div>
+						<div class="card-body">
+							<h3>Sample-efficient interatomic potentials</h3>
+							<p>Multitask learning with semiempirical orbital charges as an auxiliary target makes equivariant machine learning interatomic potentials more data-efficient.</p>
+							<div class="badges">
+								<span class="tag">NeurIPS 2026 Sim2Science and ML4Molecules</span>
+								<a class="badge" href="https://openreview.net/forum?id=hSiJO1ssmO" target="_blank" rel="noopener">Paper</a>
+							</div>
+						</div>
+					</article>
+
+					<article class="card">
+						<div class="card-media">
+							<img src="images/isd.webp" width="800" height="628" loading="lazy" alt="Diagram of Inference Set Design: an active agent moves the hardest examples from the inference set to the observation set, reaching higher system accuracy than a random agent." />
+						</div>
+						<div class="card-body">
+							<h3>Active learning for closed-loop discovery</h3>
+							<p>Inference Set Design is an active learning strategy that targets the hardest examples in a screening library. It reduces the cost of high-throughput molecular screens by up to 60%.</p>
+							<div class="badges">
+								<span class="tag">ICLR 2025</span>
+								<span class="tag">USPTO patent application</span>
+								<a class="badge" href="https://arxiv.org/abs/2410.19631" target="_blank" rel="noopener">Paper</a>
+								<a class="badge" href="https://github.com/ineporozhnii/inference_set_design" target="_blank" rel="noopener">Code</a>
+								<a class="badge" href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260178928" target="_blank" rel="noopener">Patent</a>
+							</div>
+						</div>
+					</article>
+
+					<article class="card">
+						<div class="card-media">
+							<video src="images/materials_space.mp4" poster="images/materials_space.jpg" width="640" height="640" autoplay muted loop playsinline preload="metadata" aria-label="Animated two-dimensional map of the Materials Project database clustered by ML-predicted electronic fingerprints."></video>
+						</div>
+						<div class="card-body">
+							<h3>Electronic fingerprints for materials space</h3>
+							<p>ProDosNet is a graph neural network that generates orbital-resolved densities of states. Its electronic fingerprints map the entire Materials Project, so new materials can be found near known high performers.</p>
+							<div class="badges">
+								<span class="tag">PRX Intelligence 2026</span>
+								<a class="badge" href="https://journals.aps.org/prxintelligence/abstract/10.1103/g86f-dn26" target="_blank" rel="noopener">Paper</a>
+								<a class="badge" href="https://github.com/ineporozhnii/pdos_gnn" target="_blank" rel="noopener">Code</a>
+								<a class="badge" href="https://huggingface.co/spaces/inep/prodosmate" target="_blank" rel="noopener">Demo</a>
+							</div>
+						</div>
+					</article>
+
+					<article class="card">
+						<div class="card-media">
+							<video src="images/oled_emitter.mp4" poster="images/oled_emitter.jpg" width="640" height="686" autoplay muted loop playsinline preload="metadata" aria-label="Rotating 3D model of an organometallic phosphorescent emitter molecule."></video>
+						</div>
+						<div class="card-body">
+							<h3>Foundation models for OLED emitter discovery</h3>
+							<p>A virtual screening pipeline built on chemical foundation models that achieves &lt;100 meV error on experimental emission energies and capable of screening ~1 million organometallic molecules per day on 8 GPUs.</p>
+							<div class="badges">
+								<span class="tag">Preprint 2026</span>
+								<a class="badge" href="https://chemrxiv.org/doi/full/10.26434/chemrxiv.15003869/v2" target="_blank" rel="noopener">Paper</a>
+							</div>
+						</div>
+					</article>
+
+					<article class="card">
+						<div class="card-media">
+							<video src="images/uma_dock.mp4" poster="images/uma_dock.jpg" width="640" height="640" autoplay muted loop playsinline preload="metadata" aria-label="Molecular dynamics trajectory of an organoruthenium inhibitor bound in the PIM2 kinase pocket, simulated with the UMA model."></video>
+						</div>
+						<div class="card-body">
+							<h3>Modelling protein–organometallic ligand interactions with MLIP</h3>
+							<p>A pipeline that combines OpenFold-3 co-folding, AutoDock Vina, GROMACS, and the UMA atomistic foundation model to run molecular dynamics simulations of protein bound to organometallic ligands.</p>
+							<div class="badges">
+								<a class="badge" href="https://github.com/ineporozhnii/uma-dock" target="_blank" rel="noopener">Code</a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- Publications -->
+		<section id="publications">
+			<div class="container">
+				<h2>Publications</h2>
+
+				<ul class="pubs">
+					<li>
+						<div class="pub-title">Efficient Biological Data Acquisition through Inference Set Design</div>
+						<div class="pub-authors"><b>I. Neporozhnii</b>†, J. Roy†, E. Bengio, J. Hartford</div>
+						<div class="badges">
+							<span class="tag">ICLR 2025</span>
+							<a class="badge" href="https://arxiv.org/abs/2410.19631" target="_blank" rel="noopener">arXiv</a>
+							<a class="badge" href="https://github.com/ineporozhnii/inference_set_design" target="_blank" rel="noopener">Code</a>
+							<a class="badge" href="https://iclr.cc/virtual/2025/poster/28817" target="_blank" rel="noopener">Poster</a>
+						</div>
+					</li>
+					<li>
+						<div class="pub-title">Navigating the Materials Space with Machine-Learning-Generated Electronic Fingerprints</div>
+						<div class="pub-authors"><b>I. Neporozhnii</b>, Z. Wang, R. Bajpai, C. Gomez, N. Chakraborty, T. Dong, I. Tamblyn, S. Hoogland, O. Voznyy</div>
+						<div class="pub-venue">PRX Intelligence 1, 013014</div>
+						<div class="badges">
+							<span class="tag">PRX Intelligence 2026</span>
+							<a class="badge" href="https://journals.aps.org/prxintelligence/abstract/10.1103/g86f-dn26" target="_blank" rel="noopener">Paper</a>
+							<a class="badge" href="https://github.com/ineporozhnii/pdos_gnn" target="_blank" rel="noopener">Code</a>
+							<a class="badge" href="https://huggingface.co/spaces/inep/prodosmate" target="_blank" rel="noopener">Demo</a>
+						</div>
+					</li>
+					<li>
+						<div class="pub-title">Multitask Learning with Semiempirical Orbital Charges Enables Sample-Efficient MLIPs</div>
+						<div class="pub-authors"><b>I. Neporozhnii</b>, S. Hoogland, O. Voznyy</div>
+						<div class="pub-venue">NeurIPS 2026 Workshops on Sim2Science: ML with Imperfect Scientific Models and ML4Molecules: Agentic Systems for Molecular Sciences</div>
+						<div class="badges">
+							<span class="tag">NeurIPS 2026 Workshops</span>
+							<a class="badge" href="https://openreview.net/forum?id=hSiJO1ssmO" target="_blank" rel="noopener">OpenReview</a>
+							<a class="badge" href="https://arxiv.org/abs/2605.24073" target="_blank" rel="noopener">arXiv</a>
+						</div>
+					</li>
+					<li>
+						<div class="pub-title">Accelerating Discovery of Phosphorescent Blue OLED Emitters using Chemical Foundation Models</div>
+						<div class="pub-authors">A. Davis†, <b>I. Neporozhnii</b>†, F. Therrien, S. Mahesh, Z. Wang, Z. Zhu, J. Cheung, O. Ostapenko, A. Zhuang, X. Chen, A. Mitschang, E. Hunter, B. Sutherland, S. Hoogland, E. Zysman-Colman, E. Sargent, O. Voznyy</div>
+						<div class="pub-venue">ChemRxiv preprint</div>
+						<div class="badges">
+							<span class="tag">Preprint 2026</span>
+							<a class="badge" href="https://chemrxiv.org/doi/full/10.26434/chemrxiv.15003869/v2" target="_blank" rel="noopener">Paper</a>
+						</div>
+					</li>
+					<li>
+								<div class="pub-title">Machine Learning Models for the Discovery of Direct Band Gap Materials for Light Emission and Photovoltaics</div>
+								<div class="pub-authors">F. Dinic, <b>I. Neporozhnii</b>, O. Voznyy</div>
+								<div class="pub-venue">Computational Materials Science 231, 112580</div>
+								<div class="badges">
+									<span class="tag">Computational Materials Science 2024</span>
+									<a class="badge" href="https://doi.org/10.1016/j.commatsci.2023.112580" target="_blank" rel="noopener">Paper</a>
 								</div>
-							</section>
+							</li>
+				</ul>
+				<div class="list-more" id="pubs-more">
+					<div class="list-more-inner">
+						<ul class="pubs">
+							<li>
+								<div class="pub-title">Suppressing Dendrites via Lateral Lithium Flux in Li Metal Solid-State Batteries</div>
+								<div class="pub-authors">H. Zhang†, F. Okur†, M. Klimpel, J. F. Baumgärtner, J. Šivavec, A. Müller, <b>I. Neporozhnii</b>, O. Kibrisli, O. Voznyy, Y. E. Romanyuk, M. V. Kovalenko, K. V. Kravchyk</div>
+								<div class="pub-venue">Energy &amp; Environmental Science 19, 4298</div>
+								<div class="badges">
+									<span class="tag">EES 2026</span>
+									<a class="badge" href="https://doi.org/10.1039/d6ee02327d" target="_blank" rel="noopener">Paper</a>
+								</div>
+							</li>
+							<li>
+								<div class="pub-title">Strain Data Augmentation Enables Machine Learning of Inorganic Crystal Geometry Optimization</div>
+								<div class="pub-authors">F. Dinic, Z. Wang, <b>I. Neporozhnii</b>, U. B. Salim, R. Bajpai, N. Rajiv, V. Chavda, V. Radhakrishnan, O. Voznyy</div>
+								<div class="pub-venue">Patterns 4(2), 100663</div>
+								<div class="badges">
+									<span class="tag">Patterns 2023</span>
+									<a class="badge" href="https://doi.org/10.1016/j.patter.2022.100663" target="_blank" rel="noopener">Paper</a>
+								</div>
+							</li>
+							<li>
+								<div class="pub-title">Insertion of MXene-Based Materials into Cu–Pd 3D Aerogels for Electroreduction of CO<sub>2</sub> to Formate</div>
+								<div class="pub-authors">M. Abdinejad, S.  Subramanian, M. K. Motlagh, M. Noroozifar, S. Duangdangchote, <b>I. Neporozhnii</b>, D. Ripepi, D. Pinto, M. Li, K. Tang, J. Middelkoop, A. Urakawa, O. Voznyy, H.-B. Kraatz, T. Burdyny</div>
+								<div class="pub-venue">Advanced Energy Materials 13(19), 2300402</div>
+								<div class="badges">
+									<span class="tag">Advanced Energy Materials 2023</span>
+									<a class="badge" href="https://doi.org/10.1002/aenm.202300402" target="_blank" rel="noopener">Paper</a>
+								</div>
+							</li>
+							<li>
+								<div class="pub-title">The Mechanics of Delta Learning: Target Design for Generalizable Scientific Machine Learning</div>
+								<div class="pub-authors">K. M. Gameel, <b>I. Neporozhnii</b>, S. Hoogland, O. Voznyy</div>
+								<div class="badges">
+									<span class="tag muted">Preprint 2026</span>
+									<a class="badge" href="https://arxiv.org/abs/2609.28782" target="_blank" rel="noopener">arXiv</a>
+								</div>
+							</li>
+							<li>
+								<div class="pub-title">The Illusion of Chemical Continuity Limits Machine Learning Generalization</div>
+								<div class="pub-authors">O. Voznyy, Z. Wang, A. Davis, R. Dutta, A. C. Tomut, K. Yadav, <b>I. Neporozhnii</b>, et al.</div>
+								<div class="badges"><span class="tag muted">Preprint 2026</span></div>
+							</li>
+							<li>
+								<div class="pub-title">How the Discreteness of the Periodic Table Undermines Machine Learning Predictions</div>
+								<div class="pub-authors">Z. Wang, A. Davis, R. Dutta, K. Yadav, <b>I. Neporozhnii</b>, O. Voznyy</div>
+								<div class="badges"><span class="tag muted">ChemRxiv 2025</span></div>
+							</li>
+							<li>
+								<div class="pub-title">Mesoscopic Self-Ordering in Oxygen Doped Ce Films Adsorbed on Mo(112)</div>
+								<div class="pub-authors">T. V. Afanasieva, A. G. Fedorus, A. M. Goriachko, A. G. Naumovets, <b>I. Neporozhnii</b>, D. V. Rumiantsev</div>
+								<div class="pub-venue">Surface Science 705, 121766</div>
+								<div class="badges">
+									<span class="tag muted">Surface Science 2021</span>
+									<a class="badge" href="https://doi.org/10.1016/j.susc.2020.121766" target="_blank" rel="noopener">Paper</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="list-toggle" aria-expanded="false" aria-controls="pubs-more">
+					<span class="list-toggle-label" data-more="Show more" data-less="Show less">Show more</span>
+					<svg class="list-toggle-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				</button>
+				<!-- <p class="legend">† Equal contribution · Full list on <a href="https://scholar.google.com/citations?user=zQt6fF8AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></p> -->
 
-					
+				<h3 class="sub">Patents</h3>
+				<ul class="pubs">
+					<li>
+						<div class="pub-title">Active Learning Techniques for Developing Map Prediction Machine Learning Models to Generate Maps of Biology</div>
+						<div class="pub-authors"><b>I. Neporozhnii</b>, J. S. Hartford, J. Roy, O. Méndez Lucio, P. F. McLean</div>
+						<div class="pub-venue">US Patent Application Publication US 2026/0178928 A1</div>
+						<div class="badges">
+							<span class="tag">USPTO 2026</span>
+							<a class="badge" href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260178928" target="_blank" rel="noopener">PDF</a>
+						</div>
+					</li>
+				</ul>
 
-
-
-	<!-- First Section -->
-	<section id="first" class="main special">
-		<header class="major">
-			<h2>My Research</h2>
-		</header>
-
-		<div class="row aln-middle gtr-150" style="margin-bottom: 2em;">
-			<div class="col-3 col-12-medium">
-				<span class="image fit" style="margin: 0;"><img src="images/lgps_loop.webp" alt="" /></span>
 			</div>
-			<div class="col-6 col-12-medium">
-				<p style="text-align: justify; margin: 0; font-size: 0.9em;">I work on AI for materials and drug discovery, including <b>active learning</b>, <b>foundation models</b>, and <b>geometric deep learning</b>. In my research, I use Python (including libraries like <b>PyTorch</b>, Pandas, Scipy, etc) to develop machine learning models and analyze chemical and biological data. I also extensively use computational chemistry methods (molcular mechanics, semiempirical tight-binding, density functional theory) to simulate molecules and materials (free energy perturbation, molecular dynamics, electronic structure calculations, etc). </p>
+		</section>
+
+		<!-- Experience & Education -->
+		<section id="experience">
+			<div class="container">
+				<h2>Experience</h2>
+				<ul class="timeline">
+					<li>
+						<div class="when">2026 – present</div>
+						<div>
+							<div class="what">ML Research Intern</div>
+							<div class="where">Valence Labs · Recursion</div>
+							<div class="detail">Machine learning for drug discovery.</div>
+						</div>
+					</li>
+					<li>
+						<div class="when">2021 – present</div>
+						<div>
+							<div class="what">Graduate Research Assistant</div>
+							<div class="where">University of Toronto · <a href="https://cleanenergy.utoronto.ca/" target="_blank" rel="noopener">Clean Energy Lab</a></div>
+							<div class="detail">ML interatomic potentials, geometric deep learning, and molecular screening pipelines. Teaching assistant in physics, co-supervised research interns.</div>
+						</div>
+					</li>
+					<li>
+						<div class="when">2024</div>
+						<div>
+							<div class="what">ML Research Intern</div>
+							<div class="where">Valence Labs · Recursion</div>
+							<div class="detail">Active learning for efficient closed-loop molecular library screens.</div>
+						</div>
+					</li>
+					<li>
+						<div class="when">2023</div>
+						<div>
+							<div class="what">Machine Learning Bootcamp Instructor</div>
+							<div class="where">Alliance for AI-Accelerated Materials Discovery (A3MD)</div>
+							<div class="detail">Led 5-day ML and computational chemistry bootcamps for 25 scientists from LG and TotalEnergies.</div>
+						</div>
+					</li>
+					<li>
+						<div class="when">2021</div>
+						<div>
+							<div class="what">Research Intern</div>
+							<div class="where">CNRS · Université Paris-Saclay</div>
+							<div class="detail">Built a signal-reconstruction algorithm for particle detectors in C++.</div>
+						</div>
+					</li>
+				</ul>
+
+				<h3 class="sub">Education</h3>
+				<ul class="timeline">
+					<li>
+						<div class="when">2021 – present</div>
+						<div>
+							<div class="what">Ph.D. Machine Learning &amp; Computational Chemistry</div>
+							<div class="where">University of Toronto · Advisor: Prof. Oleksandr Voznyy</div>
+							<div class="detail">Thesis: <i>Machine Learning for Accelerated Screening of Molecules and Materials</i>.</div>
+						</div>
+					</li>
+					<li>
+						<div class="when">2017 – 2021</div>
+						<div>
+							<div class="what">B.Sc. Physics</div>
+							<div class="where">Taras Shevchenko National University of Kyiv</div>
+							<div class="detail">Undergraduate research in experimental nanomaterials and computational high-energy physics.</div>
+						</div>
+					</li>
+				</ul>
 			</div>
-			<div class="col-3 col-12-medium">
-				<span class="image fit" style="margin: 0;"><img src="images/expuu_transparent_loop.webp" alt="" /></span>
+		</section>
+
+		<!-- Talks -->
+		<section id="talks">
+			<div class="container">
+				<h2>Talks &amp; Posters</h2>
+				<ul class="timeline">
+					<li>
+						<div class="when">2026 <span class="tag">Talk</span></div>
+						<div>
+							<div class="what">Accelerating Discovery of Phosphorescent Blue OLED Emitters using Chemical Foundation Models</div>
+							<div class="where">Canadian Societies for Chemistry and Chemical Engineering Conference (X2026), Toronto</div>
+						</div>
+					</li>
+					<li>
+						<div class="when">2025 <span class="tag muted">Poster</span></div>
+						<div>
+							<div class="what">Efficient Biological Data Acquisition through Inference Set Design</div>
+							<div class="where">International Conference on Learning Representations (ICLR), Singapore</div>
+						</div>
+					</li>
+					<li>
+						<div class="when">2025 <span class="tag muted">Poster</span></div>
+						<div>
+							<div class="what">Efficient High-Throughput Compound Library Screens with Active Learning</div>
+							<div class="where">Accelerate Conference, Toronto</div>
+						</div>
+					</li>
+					<li>
+						<div class="when">2024 <span class="tag muted">Poster</span></div>
+						<div>
+							<div class="what">Navigating Materials Space with ML-Generated Electronic Fingerprints</div>
+							<div class="where">Materials for Sustainable Development Conference (MATSUS24), Barcelona</div>
+						</div>
+					</li>
+					<li>
+						<div class="when">2023 <span class="tag">Talk</span></div>
+						<div>
+							<div class="what">Navigating Materials Space with ML-Generated Electronic Fingerprints</div>
+							<div class="where">Canadian Chemistry Conference and Exhibition, Vancouver · <b>Best Presentation Award</b></div>
+						</div>
+					</li>
+				</ul>
+				<div class="list-more" id="talks-more">
+					<div class="list-more-inner">
+						<ul class="timeline">
+							<li>
+								<div class="when">2023 <span class="tag">Talk</span></div>
+								<div>
+									<div class="what">Accelerated Discovery of Battery Materials using ML-Predicted Density of States</div>
+									<div class="where">Climate Positive Energy Research Day, Toronto</div>
+								</div>
+							</li>
+							<li>
+								<div class="when">2023 <span class="tag muted">Poster</span></div>
+								<div>
+									<div class="what">Navigating Materials Space with ML-Generated Electronic Fingerprints</div>
+									<div class="where">Accelerate Conference, Toronto</div>
+								</div>
+							</li>
+							<li>
+								<div class="when">2022 <span class="tag">Talk</span></div>
+								<div>
+									<div class="what">Machine Learning Methods for Predicting Density of States</div>
+									<div class="where">MRS Fall Meeting &amp; Exhibit, Boston</div>
+								</div>
+							</li>
+							<li>
+								<div class="when">2022 <span class="tag">Talk</span></div>
+								<div>
+									<div class="what">Machine Learning Methods for Predicting Density of States</div>
+									<div class="where">Canadian Chemistry Conference and Exhibition, Calgary</div>
+								</div>
+							</li>
+							<li>
+								<div class="when">2022 <span class="tag muted">Poster</span></div>
+								<div>
+									<div class="what">Machine Learning Methods for Predicting Density of States</div>
+									<div class="where">Accelerate Conference, Toronto; Canadian Symposium on Theoretical and Computational Chemistry, Kelowna</div>
+								</div>
+							</li>
+							<li>
+								<div class="when">2020 <span class="tag">Talk</span></div>
+								<div>
+									<div class="what">Spatio-Temporal Correlation between Gamma-Ray Bursts and High-Energy Neutrinos</div>
+									<div class="where">Week of Doctoral Students, Prague</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="list-toggle" aria-expanded="false" aria-controls="talks-more">
+					<span class="list-toggle-label" data-more="Show more" data-less="Show less">Show more</span>
+					<svg class="list-toggle-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				</button>
 			</div>
-		</div>
-		<!-- </div>-->
-		<ul class="features">
-			<li>
-				<div class="spotlight">
-					<span class="image"><img src="images/gnn_pdos_prediction.png" alt=""/></span>
-				</div>
-				<h3>Graph Neural Network for Materials Density of States prediction</h3>
-				<ul class="actions special">
-					<a href="https://github.com/ineporozhnii/pdos_gnn" target="_blank" class="button">Learn More</a>
-				</ul>
-			</li>
-			<li>
-				<div class="spotlight">
-					<span class="image"><img src="images/material_space_loop.gif" alt=""/></span>
-				</div>
-				<h3>Navigate Materials Space with ML-generated Electronic Fingerprints</h3>
-				<ul class="actions special">
-					<a href="https://huggingface.co/spaces/inep/prodosmate" target="_blank" class="button">Learn More</a>
-				</ul>
-			</li>
-			<li>
-				<div class="spotlight">
-					<span class="image"><img src="images/isd.png" alt=""/></span>
-				</div>
-				<h3>Efficient Biological Data Acquisition through Inference Set Design</h3>
-				<ul class="actions special">
-					<a href="https://github.com/ineporozhnii/inference_set_design" target="_blank" class="button">Learn More</a>
-				</ul>
-			</li>
-		</ul>
+		</section>
 
-	</section>
+		<!-- Awards -->
+		<section id="awards">
+			<div class="container">
+				<h2>Awards &amp; Scholarships</h2>
+				<ul class="timeline">
 
-	<section id="publications" class="main">
-		<div class="content">
-			<header class="major">
-				<h2>Selected Publications</h2>
-			</header>
-			<ul class="alt">
 					<li>
-						<a href="https://arxiv.org/abs/2410.19631" target="_blank">Efficient Biological Data Acquisition through Inference Set Design</a>, ICLR, 2025  <br>
-						<small><b>I. Neporozhnii</b>, J. Roy, E. Bengio, J. Hartford</small>
+						<div class="when">2021 – 2026</div>
+						<div>
+							<div class="what"><a href="https://www.sgs.utoronto.ca/awards/connaught-international-scholarship/" target="_blank" rel="noopener">Connaught International Scholarship for Doctoral Students</a></div>
+							<div class="where">University of Toronto · $50,000</div>
+						</div>
 					</li>
 					<li>
-						<a href="https://arxiv.org/abs/2605.24073" target="_blank">Multitask learning with semiempirical orbital charges enables sample-efficient MLIPs</a>, Preprint  <br>
-						<small><b>I. Neporozhnii</b>, Sjoerd Hoogland, Oleksandr Voznyy</small>
+						<div class="when">2024</div>
+						<div>
+							<div class="what"><a href="https://cpe.utoronto.ca/climate-positive-energy-graduate-student-scholarships/" target="_blank" rel="noopener">Climate Positive Energy Graduate Scholarship</a></div>
+							<div class="where">University of Toronto · $15,000</div>
+						</div>
 					</li>
 					<li>
-						<a href="https://chemrxiv.org/doi/full/10.26434/chemrxiv.15003869/v1" target="_blank">Accelerating discovery of phosphorescent blue OLED emitters using chemical foundation models</a>, Preprint  <br>
-						<small>A. Davis, <b>I. Neporozhnii</b>, F. Therrien,  S. Mahesh, Z. Wang, Z. Zhu, J. Cheung, O. Ostapenko, A. Zhuang, X. Chen, A. Mitschang, E. Hunter, B. Sutherland, S. Hoogland, E. Zysman-Colman, E. Sargent, O. Voznyy</small>
+						<div class="when">2023</div>
+						<div>
+							<div class="what">Best Presentation Award</div>
+							<div class="where">Canadian Chemistry Conference and Exhibition</div>
+						</div>
 					</li>
-					<li>
-						<a href="https://chemrxiv.org/engage/chemrxiv/article-details/6501118ab338ec988a61699d" target="_blank">Navigating Materials Space with ML-Generated Electronic Fingerprints</a>, Preprint  <br>
-						<small><b>I. Neporozhnii</b>, Z. Wang, R. Bajpai, C. Gomez, N. Chakraborty, I. Tamblyn, O. Voznyy</small>
-					</li>
-					<li>
-						<a href="https://doi.org/10.1016/j.commatsci.2023.112580" target="_blank">Machine learning models for the discovery of direct band gap materials for light emission and photovoltaics</a>, Computational Materials Science, 2024  <br>
-						<small>F. Dinic, <b>I. Neporozhnii</b>, O. Voznyy</small>
-					</li>
-					<li>
-						<a href="https://doi.org/10.1016/j.patter.2022.100663" target="_blank">Strain data augmentation enables machine learning of inorganic crystal geometry optimization</a>, Patterns, 2023  <br>
-						<small>F. Dinic, Z. Wang, <b>I. Neporozhnii</b>, U. Bin Salim, R. Bajpai, N. Rajiv, V. Chavda, V. Radhakrishnan, and O. Voznyy</small>
-					</li>
-					<li>
-						<a href="https://doi.org/10.1002/aenm.202300402" target="_blank">Insertion of MXene-Based Materials into Cu–Pd 3D Aerogels for Electroreduction of CO2 to Formate</a>, Advanced Energy Materials  <br>
-						<small>M. Abdinejad, S. Subramanian, M. K. Motlagh, M. Noroozifar, S. Duangdangchote,  <b>I. Neporozhnii</b>, D. Ripepi, D. Pinto, M. Li, K. Tang, J. Middelkoop, A, Urakawa, O. Voznyy, H.-B. Kraatz, T. Burdyny</small>
-					</li>
-					<li>
-						<a href="https://doi.org/10.1016/j.susc.2020.121766" target="_blank">Mesoscopic self-ordering in oxygen doped Ce films adsorbed on Mo(112)</a>, Surface Science, 2021  <br>
-						<small>T. Afanasieva, A. Fedorus, A. Goriachko, A. Naumovets, <b>I. Neporozhnii</b>, and D. Rumiantsev</small>
-					</li>
-				</ul>
-		</div>
-	</section>	
-
-	<section id="last" class="main">
-		<div class="spotlight">
-			<div class="content">
-				<header class="major">
-					<h2>Conference Presentations</h2>
-				</header>
-				
-				<h3>Talks</h3>
-				
-				<ul class="alt">
-					<li>
-						<b>Accelerating discovery of phosphorescent blue OLED emitters using chemical foundation models</b> <br>
-						<small>Canadian Societies for Chemistry and Chemical Engineering Conference X2026, Toronto, Canada, 2026</small> 
-					</li>
-					<li>
-						<b>Accelerated discovery of battery materials using ML-predicted Density of States</b> <br>
-						<small>Climate Positive Energy Research Day, Toronto, Canada, 2023</small> 
-					</li>
-					<li>
-						<b>Navigating Material Space with ML-Generated Electronic Fingerprints</b> <br>
-						<small>Canadian Chemistry Conference and Exhibition, Vancouver, Canada, 2023</small>
-					</li>
-					<li>
-						<b>Machine learning methods for predicting density of states</b> <br>
-						<small>MRS Fall Meeting & Exhibit, Boston, United States, 2022</small>
-					</li>
-					<li>
-						<b>Machine learning methods for predicting density of states</b> <br>
-						<small>Canadian Chemistry Conference and Exhibition, Calgary, Canada, 2022</small>
-					</li>
-					<li>
-						<b>Spatio-temporal correlation between Gamma-ray bursts and High-energy neutrino</b> <br>
-						<small>Week of Doctoral Students, Prague, Czech Republic, 2020</small>
-					</li>
-			    </ul>
-
-
-
-				<h3>Posters</h3>
-
-				<ul class="alt">
-					<li>
-						<b>Efficient High-Throughput Compound Library Screens with Active Learning</b> <br>
-						<small>Accelerate Conference, Toronto, Canada, 2025</small> 
-					</li>
-					<li>
-						<b>Efficient Biological Data Acquisition through Inference Set Design</b> <br>
-						<small>International Conference on Learning Representations (ICLR), Singapore, 2025</small> 
-					</li>
-					<li>
-						<b>Navigating Material Space with ML-Generated Electronic Fingerprints</b> <br>
-						<small>Materials for Sustainable Development Conference (MATSUS24), Barcelona, Spain, 2024</small> 
-					</li>
-					<li>
-						<b>Navigating Material Space with ML-Generated Electronic Fingerprints</b> <br>
-						<small>Accelerate Conference, Toronto, Canada, 2023</small>
-					</li>
-					<li>
-						<b>Machine learning methods for predicting density of states</b> <br>
-						<small>Accelerate Conference, Toronto, Canada, 2022</small>
-					</li>
-					<li>
-						<b>Machine learning methods for predicting density of states</b> <br>
-						<small>The Canadian Symposium on Theoretical and Computational Chemistry, Kelowna, Canada, 2022</small>
-					</li>
-			    </ul>
-				
-			</div>
-			<span class="talkimg"><img src="images/presenting.jpeg" alt="" /></span>
-		</div>
-	</section>	
-
-	<section id="awards" class="main special">
-		<header class="major">
-			<h2>Awards & Scholarships</h2>
-		</header>
-		<ul class="features2">
-			<li>
-				<div class="projectcol">
-					<span class="image"><img src="images/cpe_logo.png" alt="" width="15%" height="auto"/></span>
-				</div>
-				<h3>Climate Positive Energy Graduate Scholarship</h3>
-				<ul class="actions special">
-					<a href="https://cpe.utoronto.ca/climate-positive-energy-graduate-student-scholarships/" target="_blank" class="button">Learn More</a>
-				</ul>
-			</li>
-			<li>
-				<div class="projectcol">
-					<span class="image"><img src="images/uoft_logo.png" alt="" width="15%" height="auto"/></span>
-				</div>
-				<h3>Connaught Scholarship for Doctoral Students</h3>
-				<ul class="actions special">
-					<a href="https://www.sgs.utoronto.ca/awards/connaught-international-scholarship/" target="_blank" class="button">Learn More</a>
-				</ul>
-			</li>
-		</ul>
-
-	</section>
-
-	<!-- Get Started -->
-	<section id="sideprojects" class="main special">
-		<header class="major">
-			<h2>Side Projects</h2>
-		</header>
-		<ul class="features2">
-			<li>
-				<div class="projectcol">
-					<span class="image"><img src="images/ainfer_demo.png" alt=""/></span>
-				</div>
-				<h3>Ainfer</h3>
-				<p> A web application for research paper analysis with Large Language models.</p>
-				<ul class="actions special">
-					<a href="https://github.com/ineporozhnii/Ainfer" target="_blank" class="button">Learn More</a>
-				</ul>
-			</li>
-			<li>
-				<div class="projectcol">
-					<span class="image"><img src="images/satellites.gif" alt=""/></span>
-				</div>
-				<h3>Satellite tracker</h3>
-				<p>Code for live tracking of satellites and space debris. Developed for NASA Space Apps hackathon</p>
-				<ul class="actions special">
-					<a href="https://www.youtube.com/watch?v=t6fcdRts1C8&ab_channel=OleksandraOstapenko" target="_blank" class="button">Learn More</a>
-				</ul>
-			</li>
-		</ul>
 	
-	</section>
-
-
-</div>
-
-<!-- Footer -->
-<footer id="footer">
-	<section>
-		<h2>Contact Me</h2>
-		<dl class="alt">
-			<dt>Email</dt>
-			<dd>ihor.neporozhnii@mail.utoronto.ca</dd>
-		</dl>
-		<ul class="icons">
-			<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
-			 <li><a href="https://scholar.google.com/citations?user=zQt6fF8AAAAJ&hl=en" class="icon brands fa-google alt"><span class="label">Google Scholar</span></a></li>
-			<li><a href="https://github.com/ineporozhnii" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-			<li><a href="https://www.linkedin.com/in/ihor-neporozhnii/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-		</ul>
-	</section>
-	<p class="copyright">&copy; 2026 Ihor Neporozhnii. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-</footer>
-
-
-				
-			
-					
-
+				</ul>
 			</div>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Other -->
+		<section id="other">
+			<div class="container">
+				<h2>Other</h2>
+				<ul class="timeline">
+					<li>
+						<div class="when">Co-organizer</div>
+						<div>
+							<div class="what"><a href="https://huggingface.co/spaces/sepiq-2026/SEPIQ-2026-Challenge" target="_blank" rel="noopener">SEPIQ 2026 challenge</a></div>
+							<div class="detail">Challenge on sequence-based antigen–antibody interaction prediction. Built the residue-level evaluation pipeline and benchmarked co-folding models (Boltz, Chai, OpenFold-3).</div>
+						</div>
+					</li>
+					<li>
+						<div class="when">Side project</div>
+						<div>
+							<div class="what"><a href="https://github.com/ineporozhnii/Ainfer" target="_blank" rel="noopener">Ainfer</a></div>
+							<div class="detail">Web application for research paper analysis with large language models.</div>
+						</div>
+					</li>
+					<li>
+						<div class="when">Hackathon</div>
+						<div>
+							<div class="what"><a href="https://youtu.be/HcUbqpptzWM" target="_blank" rel="noopener">Satellite tracker</a></div>
+							<div class="detail">Live tracking of satellites and space debris, built for the NASA Space Apps Challenge.</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-	</body>
+	</main>
+
+	<footer>
+		<div class="container">
+			<span>&copy; 2026 Ihor Neporozhnii · <a href="mailto:ihor.neporozhnii&#64;gmail.com">ihor.neporozhnii&#64;gmail.com</a></span>
+			<span>Last updated: October 2026</span>
+		</div>
+	</footer>
+
+	<script>
+		// Long lists (publications, talks): show the first 5, collapse the rest behind a toggle.
+		// Without JS (no .js class on <html>) the full lists stay visible and the buttons are hidden.
+		document.querySelectorAll('.list-toggle').forEach(function (btn) {
+			var region = document.getElementById(btn.getAttribute('aria-controls'));
+			if (!region) return;
+			var label = btn.querySelector('.list-toggle-label');
+
+			function set(open, userAction) {
+				btn.setAttribute('aria-expanded', open);
+				label.textContent = open ? label.dataset.less : label.dataset.more;
+				region.classList.toggle('is-open', open);
+				region.inert = !open;
+				// When collapsing from far down the list, bring the end of the visible items back into view.
+				if (!open && userAction && region.getBoundingClientRect().top < 0) {
+					var y = region.getBoundingClientRect().top + window.pageYOffset - window.innerHeight * 0.6;
+					window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+				}
+			}
+
+			set(false, false);
+			btn.addEventListener('click', function () {
+				set(btn.getAttribute('aria-expanded') !== 'true', true);
+			});
+		});
+	</script>
+
+	<script>
+		// Respect reduced-motion preferences for the looping research animations.
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+			document.querySelectorAll('video[autoplay]').forEach(function (v) {
+				v.removeAttribute('autoplay');
+				v.pause();
+				v.setAttribute('controls', '');
+			});
+		}
+	</script>
+
+</body>
 </html>
